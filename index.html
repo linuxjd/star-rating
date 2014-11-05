@@ -1,21 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <title>评论模块</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>评论模块</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h3>五星评分</h3>
-<ul class="rating nostar" id="star">
-  <li class="one">  <a href="javascript:void(0);" title="1 Star" >1</a></li>
-  <li class="two">  <a href="javascript:void(0);" title="2 Stars">2</a></li>
-  <li class="three"><a href="javascript:void(0);" title="3 Stars">3</a></li>
-  <li class="four"> <a href="javascript:void(0);" title="4 Stars">4</a></li>
-  <li class="five"> <a href="javascript:void(0);" title="5 Stars">5</a></li>
-</ul>
-<span id="stars-tip" class="result"></span>
-<input id="stars-input" name="b" value="" size="2" type="hidden" />
+<div class="comment-area clearfix">
+  <span class="title">您到评论</span>
+  <ul class="rating nostar" id="star">
+    <li class="one">  <a href="javascript:void(0);" title="1" >1</a></li>
+    <li class="two">  <a href="javascript:void(0);" title="2">2</a></li>
+    <li class="three"><a href="javascript:void(0);" title="3">3</a></li>
+    <li class="four"> <a href="javascript:void(0);" title="4">4</a></li>
+    <li class="five"> <a href="javascript:void(0);" title="5">5</a></li>
+  </ul>
+  <span id="stars-tip" class="f-star"></span>
+  <span class="tip"></span>
+  <input id="stars-input" name="b" value="" size="2" type="hidden" />
+
+  <div class="post-comment-wrap clearfix">
+    <div class="add-ct-tip">
+      <div class="add-ct-wrap hightlight-ipt">
+        <p style="padding:10px;">
+          <textarea class="post-comment-ipt"></textarea>
+        </p>
+        <!--
+        <p class="length-tip">240</p>
+        -->
+      </div>
+      <a class="add-new-btn post-comment-btn" href="javascript:void(0);">发布评论</a>
+      <p class="cmt-counts">11条评论</p>
+      <span class="tip"></span>
+    </div>
+  </div>
+
+  <hr>
+  <div class="comment-wrap">
+    <div id="comment-71860" class="note-comment">
+      <div class="avatar">
+        <a href="/users/f6bb3e584b44" target="_blank"><img alt="User normal" src="img/user_normal.jpg"></a>
+      </div>
+      <div class="content">
+        <div class="comment-header">
+          <a class="author-name" href="/users/f6bb3e584b44">无声远望</a>
+          <span class="reply-time">• <a href="http://www.jianshu.com/p/012faf8e6465?comment=71860#comment-71860">2014.10.31 12:45</a></span>
+        </div>
+        <p>看到结局的瞬间觉得：《恐怖游轮》？</p>
+      </div>
+    </div>
+
+    <div id="comment-71754" class="note-comment">
+      <div class="avatar" style="display:inline-block;">
+        <a href="/users/75618e79856a" target="_blank"><img alt="Default avatar" src="img/user_normal.jpg"></a>
+      </div>
+      <div class="content">
+        <div class="comment-header">
+          <a class="author-name" href="/users/75618e79856a">大波僵尸</a>
+          <span class="reply-time">• <a href="http://www.jianshu.com/p/012faf8e6465?comment=71754#comment-71754">2014.10.31 02:22</a></span>
+        </div>
+        <p>看刀爺的故事，不自觉产生一些想法<br>传说 在万圣节前夜 人们各种奇怪的装扮 源自于人们对于鬼魂的恐惧 恐惧鬼魂佔据自己的身体 于是人们要打扮的更加希奇古怪来吓走这些鬼魂 <br>为什么鬼魂想要佔据人们的身体？想必是对于为「人」这件事情还有执念<br>现在我们为「人」，百年之后，也许也是这鬼魂中的一个<br>那既然如此，何不现在 就好好的做自己<br><br>那么今天 就当作是直面自己
+        爱自己 的最佳时机<br></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/event.js"></script>
 <script src="js/comment.js"></script>
