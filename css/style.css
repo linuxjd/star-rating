@@ -311,5 +311,5 @@ ul.rating li.five a:hover {background-position:0 -80px}
 
 .clearfix {
   /*For ie6/7*/
-  zoom: 1;
+  zoom: 1\9;
 }
